@@ -1,7 +1,7 @@
 {
-  "name": "Lion-mane",
+  "name": "tacos-fita",
   "version": "1.0.0",
-  "description": "Website for barber",
+  "description": "Website for Tacos Fita, a Portland-based taco restaurant featuring handmade flour tortillas, Peruvian Mayakoba beans, vegan basmati rice, certified Angus beef, and premium chicken tenderloins",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
