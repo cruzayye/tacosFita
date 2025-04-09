@@ -134,7 +134,7 @@ export default function Sidebar() {
         {isOpen ? <Close fontSize="large" /> : <Menu fontSize="large" />}
       </MenuButton>
       <NavLink className="logo-link" onClick={handleLogoClick}>
-        <img src={logo} alt="logo" className="logo" />
+        <img src={'../Assets/transparentLogo.png'} alt="logo" className="logo" />
       </NavLink>
 
       <Navbar isOpen={isOpen} className="nav-bar">

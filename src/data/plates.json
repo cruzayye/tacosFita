@@ -21,7 +21,7 @@
       {
         "name": "QUESADILLAS",
         "headline": "Melted to perfection",
-        "image": "/Assets/quesadillas.png",
+        "image": "./Assets/quesadillas.png",
         "description": "Our quesadillas start with mom's handmade flour tortillas, filled with melted cheese and your choice of premium certified Angus beef or chicken tenderloin. Served with house-made salsa and sour cream on the side."
       },
       {
