@@ -9,8 +9,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Plate from "./Plate/Plate";
 
 const App = () => {
-  // one of the routes should be the plate component with the selected plate
-  // create a section page to render the selected element.
   const [plates, setPlates] = useState([]);
 
   useEffect(() => {

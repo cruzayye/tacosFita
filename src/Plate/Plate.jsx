@@ -1,17 +1,13 @@
 import React from 'react';
 import './Plate.scss';
-import { useNavigate } from 'react-router-dom';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Plate = ({ name, headline, description, image }) => {
-  const navigate = useNavigate();
   
-  const handleClick = () => {
-    // Navigate to a specific menu category page
-    navigate(`/menu/${name.toLowerCase()}`);
-  };
 
   return (
-    <div className="plate" onClick={handleClick}>
+    <div className="plate" >
+      <Sidebar />
       <div className="plate-content">
         <h2 className="plate-title">{name}</h2>
         <h3 className="plate-headline">{headline}</h3>
