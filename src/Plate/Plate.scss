@@ -1,0 +1,69 @@
+.plate {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+    
+    .plate-content {
+      padding: 30px 20px;
+      text-align: center;
+      
+      .plate-title {
+        font-size: 2.5rem;
+        margin: 0 0 10px;
+        text-transform: uppercase;
+      }
+      
+      .plate-headline {
+        font-size: 1.8rem;
+        margin: 0 0 20px;
+        color: #e3a45a; // Gold accent color
+        text-transform: uppercase;
+      }
+      
+      .plate-description {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin: 0;
+      }
+    }
+    
+    .plate-image {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease;
+        
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  
+  // Responsive adjustments
+  @media (min-width: 768px) {
+    .plate {
+      flex-direction: column-reverse;
+      
+      .plate-content {
+        padding: 40px;
+      }
+    }
+  }

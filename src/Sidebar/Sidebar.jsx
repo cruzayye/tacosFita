@@ -1,8 +1,9 @@
-import { useState } from "react";
-import { Close, Menu, Instagram, Phone } from "@mui/icons-material"; // Added Instagram and Phone icons
+import { useState, useEffect } from "react";
+import { Close, Menu, Instagram, Phone } from "@mui/icons-material";
 import styled from "@emotion/styled";
 import { useNavigate } from "react-router-dom";
 import logo from "../Assets/transparentLogo.png";
+import plateData from "../data/plates.json";
 import "./Sidebar.scss";
 
 const Navbar = styled.nav`
@@ -19,7 +20,7 @@ const Navbar = styled.nav`
   align-items: center;
   padding-top: 2rem;
   z-index: 2;
-  border-bottom: 2px solid #b4bec9; /* Adding a gold border at the bottom */
+  border-bottom: 2px solid #b4bec9; /* Adding a border at the bottom */
 `;
 
 const MenuButton = styled.button`
@@ -91,14 +92,27 @@ const Backdrop = styled.div`
   z-index: 1;
 `;
 
+// New styled component for section headers
+const SectionHeader = styled.div`
+  color: #b4bec9;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: center;
+`;
+
 export default function Sidebar() {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
+  const [plates, setPlates] = useState([]);
 
-  const handleSMPClick = () => {
-    setIsOpen(false);
-    navigate("/smp");
-  };
+  // Load plates data when component mounts
+  useEffect(() => {
+    setPlates(plateData.plates);
+  }, []);
 
   const handleHomeClick = () => {
     setIsOpen(false);
@@ -107,6 +121,11 @@ export default function Sidebar() {
 
   const handleLogoClick = () => {
     navigate("/");
+  };
+
+  const handlePlateClick = (plateName) => {
+    setIsOpen(false);
+    navigate(`/${plateName.toLowerCase()}`);
   };
 
   return (
@@ -120,23 +139,33 @@ export default function Sidebar() {
 
       <Navbar isOpen={isOpen} className="nav-bar">
         <NavLinks>
-          <NavLink>
-            <a
-              href="https://www.styleseat.com/m/v/leogomez?ncd_source=social_media"
-              target="_blank"
-              onClick={() => setIsOpen(false)}
-            >
-              Book Now
-            </a>
-          </NavLink>
-          <NavLink onClick={handleSMPClick}>SMP</NavLink>
           <NavLink onClick={handleHomeClick}>HOME</NavLink>
+          
+          
+          
+          {/* Dynamically generated menu links from plates.json */}
+          {plates.map((plate, index) => (
+            <NavLink 
+              key={index} 
+              onClick={() => handlePlateClick(plate.name)}
+            >
+              {plate.name}
+            </NavLink>
+          ))}
+          
+          {/* Locations link */}
+          <NavLink onClick={() => {
+            setIsOpen(false);
+            navigate("/locations");
+          }}>
+            LOCATIONS
+          </NavLink>
         </NavLinks>
         <div className="social-icons">
-          <a href="https://www.instagram.com/lionmaneco" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/tacosfita" target="_blank" rel="noopener noreferrer">
             <Instagram fontSize="medium" />
           </a>
-          <a href="tel:+1234567890">
+          <a href="tel:+15031234567">
             <Phone fontSize="medium" />
           </a>
         </div>

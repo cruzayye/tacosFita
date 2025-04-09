@@ -1,0 +1,44 @@
+.menu-section {
+    background-color: #111;
+    padding: 60px 0;
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .menu-title {
+      text-align: center;
+      color: #fff;
+      font-size: 3rem;
+      margin-bottom: 50px;
+      position: relative;
+      
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background-color: #e3a45a;
+      }
+    }
+    
+    .plates-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+      }
+    }
+  }

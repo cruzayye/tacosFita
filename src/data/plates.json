@@ -1,0 +1,34 @@
+{
+    "plates": [
+      {
+        "name": "BURRITOS",
+        "headline": "Wrapped with freshness",
+        "image": "./Assets/burritos.jpg",
+        "description": "Handmade flour tortillas filled with our vegan basmati rice, Peruvian Mayakoba beans, and your choice of certified Angus beef or premium chicken tenderloin. Served with salsa and guacamole."
+      },
+      {
+        "name": "TORTAS",
+        "headline": "Mexican-style sandwiches",
+        "image": "./Assets/tortas.jpg",
+        "description": "Traditional Mexican sandwiches served on authentic bolillo bread, layered with our Mayakoba beans, avocado, lettuce, tomato, and your choice of protein. Each torta comes with a side of our homemade salsa."
+      },
+      {
+        "name": "PLATES",
+        "headline": "Complete meals with our premium ingredients",
+        "image": "./Assets/plates.jpg",
+        "description": "Our signature plates feature vegan basmati rice broth, Peruvian Mayakoba beans (never refried), handmade flour tortillas, and your choice of certified Angus beef or fresh chicken tenderloins. Served with all the classic fixings."
+      },
+      {
+        "name": "QUESADILLAS",
+        "headline": "Melted to perfection",
+        "image": "./Assets/quesadillas.png",
+        "description": "Our quesadillas start with mom's handmade flour tortillas, filled with melted cheese and your choice of premium certified Angus beef or chicken tenderloin. Served with house-made salsa and sour cream on the side."
+      },
+      {
+        "name": "SPECIALTIES",
+        "headline": "Signature dishes of Tacos Fita",
+        "image": "./Assets/specialties.jpg",
+        "description": "Chef's special creations that showcase the best of Tacos Fita. These unique dishes feature our premium ingredients in creative combinations that you won't find anywhere else in Portland. Ask your server about our daily specials."
+      }
+    ]
+  }
