@@ -4,31 +4,31 @@
         "name": "BURRITOS",
         "headline": "Wrapped with freshness",
         "image": "./Assets/burritos.jpg",
-        "description": "Handmade flour tortillas filled with our vegan basmati rice, Peruvian Mayakoba beans, and your choice of certified Angus beef or premium chicken tenderloin. Served with salsa and guacamole."
+        "description": "Hearty, hand-rolled, and packed with flavor. Each burrito is filled with a balanced blend of rice, beans, creamy guacamole, and your choice of meat—wrapped up warm and ready to fuel your day."
       },
       {
         "name": "TORTAS",
         "headline": "Mexican-style sandwiches",
         "image": "./Assets/tortas.jpg",
-        "description": "Traditional Mexican sandwiches served on authentic bolillo bread, layered with our Mayakoba beans, avocado, lettuce, tomato, and your choice of protein. Each torta comes with a side of our homemade salsa."
+        "description": "Our tortas are built on toasted, golden bolillo rolls layered with creamy guacamole, your choice of juicy, slow-cooked meat, and topped with crisp cabbage and house-pickled onions. Every bite hits that perfect balance of rich, tangy, and fresh—comfort food with serious flavor."
       },
       {
         "name": "PLATES",
         "headline": "Complete meals with our premium ingredients",
         "image": "./Assets/plates.jpg",
-        "description": "Our signature plates feature vegan basmati rice broth, Peruvian Mayakoba beans (never refried), handmade flour tortillas, and your choice of certified Angus beef or fresh chicken tenderloins. Served with all the classic fixings."
+        "description": "Our plates come loaded with your choice of tender, seasoned meat, served alongside hearty beans and rice. Each order includes three fresh, handmade tortillas and a crisp topping of shredded cabbage, pickled onions, and fresh cilantro for the perfect bite of flavor and balance."
       },
       {
         "name": "QUESADILLAS",
         "headline": "Melted to perfection",
         "image": "./Assets/quesadillas.png",
-        "description": "Our quesadillas start with mom's handmade flour tortillas, filled with melted cheese and your choice of premium certified Angus beef or chicken tenderloin. Served with house-made salsa and sour cream on the side."
+        "description": "Craving something simple and satisfying? Our quesadillas are grilled to golden perfection, packed with your choice of flavorful meats and stuffed with melted cheese. Served with a fresh green salad on the side—it’s the kind of balance you didn’t know you needed."
       },
       {
         "name": "SPECIALTIES",
         "headline": "Signature dishes of Tacos Fita",
         "image": "./Assets/specialties.jpg",
-        "description": "Chef's special creations that showcase the best of Tacos Fita. These unique dishes feature our premium ingredients in creative combinations that you won't find anywhere else in Portland. Ask your server about our daily specials."
+        "description": ""
       }
     ]
   }

@@ -1,10 +1,13 @@
 import { createRoot } from "react-dom/client";
 import Home from "./Home/Home";
 import { useState, useEffect } from "react";
-// import burritosImage from './Assets/burritos.jpg';
-// import tortasImage from './Assets/tortas.jpg';
-// import platesImage from './Assets/plates.jpg';
-import quesadillasImage from "./Assets/quesadillas.png";
+import quesadillasImage from "./Assets/quesadillas.jpg";
+import burritosImage from "./Assets/burritos.jpg";
+import tortasImage from "./Assets/tortas.jpg";
+import platesImage from "./Assets/plates.jpg";
+import specialtiesImage from "./Assets/specialties.jpg";
+
+
 // import specialtiesImage from './Assets/specialties.jpg';
 import "./App.scss";
 import plateData from "./data/plates.json";
@@ -12,11 +15,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Plate from "./Plate/Plate";
 
 const imageMap = {
-  // BURRITOS: burritosImage,
-  // TORTAS: tortasImage,
-  // PLATES: platesImage,
+  BURRITOS: burritosImage,
+  TORTAS: tortasImage,
+  PLATES: platesImage,
   QUESADILLAS: quesadillasImage,
-  // SPECIALTIES: specialtiesImage,
+  SPECIALTIES: specialtiesImage,
 };
 
 const App = () => {
