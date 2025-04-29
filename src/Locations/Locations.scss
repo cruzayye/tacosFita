@@ -1,0 +1,32 @@
+.locations {
+    text-align: center;
+    .title {
+        font-size: 2rem;
+    }
+
+    .address {
+        font-size: 1.5rem;
+        margin-top: .8rem;
+        padding-bottom: 1rem;
+
+        .google-link {
+            color: #b5bec9;
+            text-decoration: none;
+        }
+    }
+
+    .loc-divider {
+        margin-top: 1.5rem;
+        border-bottom: 1px solid white;
+    }
+
+    .hours {
+        margin-top: 1.5rem;
+        p {
+            font-size: 1.2rem;
+        }
+    }
+   
+    
+
+}

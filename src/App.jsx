@@ -13,6 +13,7 @@ import "./App.scss";
 import plateData from "./data/plates.json";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Plate from "./Plate/Plate";
+import Locations from "./Locations/Locations";
 
 const imageMap = {
   BURRITOS: burritosImage,
@@ -52,6 +53,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           {plateRoutes()}
+          <Route path="/locations" element={<Locations />} />
         </Routes>
       </main>
     </BrowserRouter>
