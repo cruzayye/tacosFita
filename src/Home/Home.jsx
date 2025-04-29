@@ -6,7 +6,7 @@ import "./Home.scss";
 
 const Home = () => {
   return (
-    <div className="background-container" style={{ touchAction: "none" }}>
+    <div className="background-container">
       <Plate
         name={"Not your average taco truck"}
         description={
