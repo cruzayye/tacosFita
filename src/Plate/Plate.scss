@@ -15,7 +15,7 @@
 
     
     .plate-content {
-      padding: 30px 20px;
+      padding: 20px 20px;
       text-align: center;
       padding-top: 0;
 
@@ -45,6 +45,7 @@
       width: 100%;
       height: auto;
       overflow: hidden;
+      margin-top: 1rem;
       
       img {
         width: 100%;
@@ -56,6 +57,11 @@
           transform: scale(1.05);
         }
       }
+    }
+
+    .order-button {
+      display: flex;
+      justify-content: center;
     }
   }
   
