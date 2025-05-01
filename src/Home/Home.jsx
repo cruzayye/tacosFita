@@ -8,7 +8,8 @@ const Home = () => {
   return (
     <div className="background-container">
       <Plate
-        name={"Not your average taco truck"}
+        name={"Tacos Fita"}
+        headline={"Not your average taco truck"}
         description={
           "Our menu draws from the bold, diverse flavors —each bite rooted in tradition, with just the right touch of creative flair. Every tortilla is handmade daily, and you can taste the difference: soft, fresh, and the perfect foundation for our carefully crafted fillings. Whether you’re here for the classics or something a little unexpected, we’re serving tacos that will keep you coming back."
         }
