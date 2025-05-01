@@ -1,4 +1,7 @@
 .content {
+  .desktop {
+    display: none;
+  }
     position: relative;
     color: white; /* Adjust text color for visibility */
     text-align: center;
@@ -17,6 +20,10 @@
       }
     }
 
+    .logo-link {
+      padding-bottom: 0;
+    }
+
     .logo-link:not(:last-child)::after {
      border-bottom: none !important;
     }
@@ -26,6 +33,41 @@
         margin-right: 10px;
       }
     }
+    @media (min-width: 768px) {
+      .desktop {
+        display: flex;
+
+        .desktop-logo {
+          margin-left: auto;
+        }
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
+          padding: 0;
+          margin-left: 2rem;
+          list-style: none;
+      
+          li {
+            color: white;
+            cursor: pointer;
+            font-size: 1.2rem;
+            
+            &:hover {
+              color: #e3a45a;
+            }
+          }
+        }
+      }
+
+      .mobile {
+        display: none;
+      }
+    }
+
+
 
 
   }
@@ -34,21 +76,5 @@
     max-width: 200px;
     width: 100%; /* Makes sure it shrinks proportionally */
   }
+
   
-  @media (max-width: 768px) { /* Target tablets and smaller */
-    .logo {
-      max-width: 150px; /* Adjust for mobile */
-    }
-    .logo-link {
-      padding-bottom: 0 !important;
-    }
-
-
-  }
-  
-  @media (max-width: 480px) { /* Target smaller mobile screens */
-    .logo {
-      max-width: 120px;
-
-    }
-  }

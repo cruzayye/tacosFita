@@ -17,6 +17,7 @@ const Locations = () => {
           >
             701 SW 6th Ave <br /> Portland OR 97204
           </a>
+          <p>Sun-Sat: 11am-7pm</p>
         </div>
       </div>
 
@@ -31,6 +32,7 @@ const Locations = () => {
           >
             3757 SE Hawthorne Blvd <br /> Portland, OR 97214
           </a>
+          <p>Tues-Sat: 11am-8pm</p>
         </div>
       </div>
 
@@ -45,18 +47,8 @@ const Locations = () => {
           >
             4727 SE Woodstock Blvd No. 1 <br /> Portland, OR 97206
           </a>
+          <p>Tues-Sun: 12pm-9pm</p>
         </div>
-      </div>
-
-      <div className="hours">
-        <div className="title">HOURS</div>
-        <p>Monday: 11am-7pm</p>
-        <p>Tuesday: 11am-7pm</p>
-        <p>Wednesday: 11am-7pm</p>
-        <p>Thursday: 11am-7pm</p>
-        <p>Friday: 11am-7pm</p>
-        <p>Saturday: 11am-7pm</p>
-        <p>Sunday: 12pm-7pm</p>
       </div>
     </div>
   );

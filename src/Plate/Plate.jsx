@@ -33,11 +33,11 @@ const Plate = ({ name, headline, description, image }) => {
         <p className="plate-description">{description}</p>
       </div>
 
-      <div className="order-button">
+      {/* <div className="order-button">
         <ThemeProvider theme={theme}>
           <Button variant="outlined">ORDER NOW</Button>
         </ThemeProvider>
-      </div>
+      </div> */}
 
       <div className="plate-image">
         <img src={image} alt={name} />

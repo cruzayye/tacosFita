@@ -8,7 +8,8 @@ import "./Sidebar.scss";
 
 const Navbar = styled.nav`
   position: fixed;
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100vh")}; /* Hide completely off screen */
+  top: ${({ isOpen }) =>
+    isOpen ? "0" : "-100vh"}; /* Hide completely off screen */
   left: 0;
   height: 75vh;
   width: 100%;
@@ -130,47 +131,75 @@ export default function Sidebar() {
 
   return (
     <div className="content">
-      <MenuButton onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? <Close fontSize="large" /> : <Menu fontSize="large" />}
-      </MenuButton>
-      <NavLink className="logo-link" onClick={handleLogoClick}>
-        <img src={logo} alt="logo" className="logo" />
-      </NavLink>
-
-      <Navbar isOpen={isOpen} className="nav-bar">
-        <NavLinks>
-          <NavLink onClick={handleHomeClick}>HOME</NavLink>
-          
-          
-          
-          {/* Dynamically generated menu links from plates.json */}
+      <div className="desktop">
+        <ul>
+        <li
+            onClick={handleHomeClick}
+          >
+            HOME
+          </li>
           {plates.map((plate, index) => (
-            <NavLink 
-              key={index} 
-              onClick={() => handlePlateClick(plate.name)}
-            >
+            <li key={index} onClick={() => handlePlateClick(plate.name)}>
               {plate.name}
-            </NavLink>
+            </li>
           ))}
-          
-          {/* Locations link */}
-          <NavLink onClick={() => {
-            setIsOpen(false);
-            navigate("/locations");
-          }}>
+          <li
+            onClick={() => {
+              navigate("/locations");
+            }}
+          >
             LOCATIONS
-          </NavLink>
-        </NavLinks>
-        <div className="social-icons">
-          <a href="https://www.instagram.com/tacosfita" target="_blank" rel="noopener noreferrer">
-            <Instagram fontSize="medium" />
-          </a>
-          <a href="tel:+15031234567">
-            <Phone fontSize="medium" />
-          </a>
+          </li>
+        </ul>
+        <div className="desktop-logo" onClick={handleLogoClick}>
+          <img src={logo} alt="logo" className="logo" />
         </div>
-      </Navbar>
-      <Backdrop isOpen={isOpen} onClick={() => setIsOpen(false)} />
+      </div>
+
+      <div className="mobile">
+        <MenuButton onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <Close fontSize="large" /> : <Menu fontSize="large" />}
+        </MenuButton>
+        <NavLink className="logo-link" onClick={handleLogoClick}>
+          <img src={logo} alt="logo" className="logo" />
+        </NavLink>
+
+        <Navbar isOpen={isOpen} className="nav-bar">
+          <NavLinks>
+            <NavLink onClick={handleHomeClick}>HOME</NavLink>
+
+            {/* Dynamically generated menu links from plates.json */}
+            {plates.map((plate, index) => (
+              <NavLink key={index} onClick={() => handlePlateClick(plate.name)}>
+                {plate.name}
+              </NavLink>
+            ))}
+
+            {/* Locations link */}
+            <NavLink
+              onClick={() => {
+                setIsOpen(false);
+                navigate("/locations");
+              }}
+            >
+              LOCATIONS
+            </NavLink>
+          </NavLinks>
+          <div className="social-icons">
+            <a
+              href="https://www.instagram.com/tacosfita"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram fontSize="medium" />
+            </a>
+            <a href="tel:+15031234567">
+              <Phone fontSize="medium" />
+            </a>
+          </div>
+        </Navbar>
+        <Backdrop isOpen={isOpen} onClick={() => setIsOpen(false)} />
+      </div>
     </div>
   );
 }
