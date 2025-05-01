@@ -26,6 +26,18 @@
             }
     }
 
+    @media (min-width: 768px) {
+        .content {
+            height: 40vh;
+
+        }
+        .desktop {
+            display: flex;
+            justify-content: space-around;
+        }
+
+    }
+
 
    
     
