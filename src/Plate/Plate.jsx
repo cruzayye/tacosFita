@@ -27,20 +27,25 @@ const Plate = ({ name, headline, description, image }) => {
   return (
     <div className="plate">
       <Sidebar />
-      <div className="plate-content">
-        <h2 className="plate-title">{name}</h2>
-        <h3 className="plate-headline">{headline}</h3>
-        <p className="plate-description">{description}</p>
-      </div>
+      <div className="flex-container">
+        <div className="left">
+          <div className="plate-content">
+            <h2 className="plate-title">{name}</h2>
+            <h3 className="plate-headline">{headline}</h3>
+            <p className="plate-description">{description}</p>
+          </div>
+        </div>
 
-      <div className="order-button">
+        {/* <div className="order-button">
         <ThemeProvider theme={theme}>
           <Button variant="outlined">ORDER NOW</Button>
         </ThemeProvider>
-      </div>
-
-      <div className="plate-image">
-        <img src={image} alt={name} />
+      </div> */}
+        <div className="right">
+          <div className="plate-image">
+            <img src={image} alt={name} />
+          </div>
+        </div>
       </div>
     </div>
   );

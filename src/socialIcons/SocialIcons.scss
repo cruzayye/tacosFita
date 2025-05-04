@@ -1,0 +1,50 @@
+.social-icons {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    a {
+      color: #b5bec9;
+      margin: 0 0.5rem;
+      transition: color 0.3s ease;
+
+      .FaInstagram {
+        color: #E1306C; // Instagram gradient pink
+      }
+      
+      .FaFacebook {
+        color: #4267B2; // Facebook blue
+      }
+      
+      .FaYelp {
+        color: #FF1A1A; // Yelp red
+      }
+      
+      .FaTiktok {
+        color: #000000; // TikTok black
+      }
+      
+      .SiDoordash {
+        color: #FF3008; // DoorDash red
+      }
+  
+      &:hover {
+        color: white;
+      }
+  
+      svg {
+        font-size: 1.8rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+        position: fixed;
+
+        bottom: 2rem;
+        width: 100%;
+        z-index: 100;
+        left: 20px;
+        width: auto;
+        text-align: left;
+    }
+  }

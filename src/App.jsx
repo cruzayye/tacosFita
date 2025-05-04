@@ -7,13 +7,13 @@ import tortasImage from "./Assets/tortas.jpg";
 import platesImage from "./Assets/plates.jpg";
 import specialtiesImage from "./Assets/specialties.jpg";
 
-
 // import specialtiesImage from './Assets/specialties.jpg';
 import "./App.scss";
 import plateData from "./data/plates.json";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Plate from "./Plate/Plate";
 import Locations from "./Locations/Locations";
+import SocialIcons from "./socialIcons/SocialIcons";
 
 const imageMap = {
   BURRITOS: burritosImage,
@@ -55,6 +55,7 @@ const App = () => {
           {plateRoutes()}
           <Route path="/locations" element={<Locations />} />
         </Routes>
+        <SocialIcons />
       </main>
     </BrowserRouter>
   );

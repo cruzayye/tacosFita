@@ -63,6 +63,37 @@
       display: flex;
       justify-content: center;
     }
+
+    @media (min-width: 768px) {
+      max-width: none;
+
+      .flex-container {
+        display: flex;
+        
+
+        .plate-content {
+          text-align: left;
+
+        }
+
+        .right {
+          margin-right: 20px;
+          .plate-image  {
+            img {
+              width: 50vw;
+            }
+            
+          }
+        }
+
+        .left {
+          align-content: center;
+        }
+      }
+
+      
+    }
+
   }
   
   

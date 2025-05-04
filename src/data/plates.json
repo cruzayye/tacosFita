@@ -26,9 +26,10 @@
       },
       {
         "name": "SPECIALTIES",
-        "headline": "Signature dishes of Tacos Fita",
+        "headline": "Seasonal Dishes",
         "image": "./Assets/specialties.jpg",
-        "description": ""
+        "description": "We’re always cooking up something new. Each of our three food trucks offers its own specialty, like our crowd-favorite birria egg rolls. These seasonal creations rotate regularly, so there’s always something fresh and exciting to try. With us, it never gets boring."
+
       }
     ]
   }

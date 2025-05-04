@@ -18,14 +18,27 @@
     .loc-divider {
         margin-top: 1.5rem;
         border-bottom: 1px solid white;
+
+           
+            p {
+                margin-top: 0.8rem;
+                font-size: 1.2rem;
+            }
     }
 
-    .hours {
-        margin-top: 1.5rem;
-        p {
-            font-size: 1.2rem;
+    @media (min-width: 768px) {
+        .content {
+            height: 40vh;
+
         }
+        .desktop {
+            display: flex;
+            justify-content: space-around;
+        }
+
     }
+
+
    
     
 
