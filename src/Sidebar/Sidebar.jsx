@@ -185,18 +185,6 @@ export default function Sidebar() {
               LOCATIONS
             </NavLink>
           </NavLinks>
-          <div className="social-icons">
-            <a
-              href="https://www.instagram.com/tacosfita"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Instagram fontSize="medium" />
-            </a>
-            <a href="tel:+15031234567">
-              <Phone fontSize="medium" />
-            </a>
-          </div>
         </Navbar>
         <Backdrop isOpen={isOpen} onClick={() => setIsOpen(false)} />
       </div>

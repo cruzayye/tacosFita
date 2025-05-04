@@ -1,6 +1,5 @@
 import React from "react";
 import "./SocialIcons.scss";
-import { Facebook } from "@mui/icons-material";
 import { FaYelp, FaTiktok, FaInstagram, FaFacebook} from "react-icons/fa";
 
 import { SiDoordash } from "react-icons/si";
