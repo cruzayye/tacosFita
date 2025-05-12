@@ -3,8 +3,9 @@ import { Close, Menu, Instagram, Phone } from "@mui/icons-material";
 import styled from "@emotion/styled";
 import { useNavigate } from "react-router-dom";
 import plateData from "../data/plates.json";
-import logo from "../Assets/transparentLogo.png";
 import "./Sidebar.scss";
+import logo from "../Assets/transparentLogo.png";
+
 
 const Navbar = styled.nav`
   position: fixed;
