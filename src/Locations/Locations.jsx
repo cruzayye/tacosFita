@@ -33,7 +33,10 @@ const Locations = () => {
             >
               3757 SE Hawthorne Blvd <br /> Portland, OR 97214
             </a>
-            <p>Tues-Sat: 11am-8pm</p>
+            <p>Mon: closed</p>
+            <p>Tues-thurs: 11am-8pm</p>
+            <p>Fri-Sat: 11am-9pm</p>
+            <p>Sun: 11am-9pm</p>
           </div>
         </div>
 
